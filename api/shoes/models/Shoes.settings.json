@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "shoes",
+  "info": {
+    "name": "shoes",
+    "description": "shoes object"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "status": {
+      "required": true,
+      "enum": [
+        "working",
+        "done"
+      ],
+      "type": "enumeration"
+    },
+    "date_added": {
+      "required": true,
+      "type": "date"
+    },
+    "date_done": {
+      "type": "date"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "owner": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}
